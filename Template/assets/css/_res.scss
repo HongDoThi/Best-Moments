@@ -1,0 +1,390 @@
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    .love__story {
+        .dFlex {
+            .love__story__item {
+                flex-basis: 35%;
+                max-width: 35%;
+            }
+        }
+    }
+    .testimonial {
+        .slides {
+            width: 100%;
+            .slide__content {
+                .slide__list {
+                    .slide__item {
+                        .slide__item__top {
+                            &:after {
+                                bottom: -10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1024px) and (min-width: 769px) {
+    .header {
+        .header__text {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .wedding__event {
+        .wedding__event__content {
+            .wedding__event__right {
+                flex-basis: 50%;
+                max-width: 50%;
+                margin: 0;
+                ul.wedding__event__list {
+                    li {
+                        ul.wedding__event__info {
+                            flex-wrap: wrap;
+                            li {
+                                flex-basis: 80%;
+                                max-width: 80%;
+                                &:nth-child(3) {
+                                    flex-basis: 100%;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .wedding__event__left {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .love__story {
+        .dFlex {
+            .love__story__item {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+            .love__story__divider {
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+        }
+    }
+    .header {
+        .header__nav ul li {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .header {
+        .header__nav {
+            position: relative;
+            display: flex;
+            align-items: center;
+            ul {
+                position: absolute;
+                top: 100%;
+                display: flex;
+                overflow: hidden;
+                left: 0;
+                display: block;
+                background-color: rgba(34, 34, 34, .9);
+                padding-left: 50px;
+                height: 0;
+                li {
+                    text-align: left;
+                    display: unset;
+                    &.li-left,
+                    &.li-right {
+                        float: none;
+                    }
+                }
+                &.hien {
+                    height: 50vh;
+                }
+            }
+            .header__logo {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                height: 0;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &.hien {
+                    height: 50vh;
+                }
+            }
+            .iconBar {
+                flex-basis: 100%;
+                max-width: 100%;
+                flex: 1;
+                display: flex!important;
+                justify-content: flex-end;
+                background-color: rgba(34, 34, 34, .6);
+                padding: 15px;
+                i {
+                    color: white;
+                    font-size: 50px;
+                }
+            }
+        }
+        .header__text {
+            width: 90%;
+            span.groom {
+                h1 {
+                    font-size: 70px;
+                }
+            }
+            span.heart {
+                &:before {
+                    width: 200px;
+                }
+                &:after {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .wedding__event {
+        .wedding__event__content {
+            flex-wrap: wrap;
+            .wedding__event__right {
+                margin: 50px 0px 0 0px!important;
+                padding: 0;
+            }
+            .wedding__event__left,
+            .wedding__event__right {
+                flex-basis: 100%;
+                max-width: 100%;
+                img {
+                    width: 100%;
+                }
+                ul.wedding__event__list {
+                    li {
+                        ul.wedding__event__info {
+                            display: flex;
+                            flex-wrap: wrap;
+                            li {
+                                flex-basis: 60%;
+                                max-width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header {
+        width: 360px;
+        position: fixed;
+    }
+    .couple {
+        .couple__thumbnail {
+            flex-wrap: wrap;
+            margin-top: 90px;
+            .couple__item {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-top: 200px;
+            }
+            .couple__heart__plus {
+                margin: 50px auto 0 auto;
+            }
+        }
+    }
+    .pink__overlay {
+        h2.couple__section__title {
+            font-size: 43px;
+        }
+        ul.countdown {
+            flex-wrap: wrap;
+            li.upDown {
+                flex-basis: 20%;
+                max-width: 20%;
+                // overflow: hidden;
+                white-space: nowrap;
+                img {
+                    width: 100%;
+                }
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .love__story {
+        .dFlex {
+            flex-wrap: wrap;
+            .love__story__item {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            .love__story__divider {
+                display: none;
+            }
+        }
+    }
+    .wedding__people {
+        .wedding__people__list {
+            flex-wrap: wrap;
+            .wedding__people__item {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+    .contact {
+        .wedding__contact {
+            width: 100%;
+            form {
+                .form-group {
+                    flex-wrap: wrap;
+                    margin: 0;
+                    .inputIcon {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .blog {
+        .blog__list {
+            flex-wrap: wrap;
+            .blog__item.gallery1 {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .location {
+        .contact__info {
+            flex-wrap: wrap;
+            .contact__info__detail.upDown__small {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .auto__slide {
+        .slides__auto {
+            flex-wrap: nowrap;
+            overflow: hidden;
+            .slide__auto__item {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    .header__text {
+        width: 100%;
+        span.groom {
+            h1 {
+                font-size: 70px;
+            }
+        }
+        span.heart {
+            &:before {
+                width: 200px;
+            }
+            &:after {
+                width: 200px;
+            }
+        }
+    }
+    .header {
+        .header__text {
+            span.groom {
+                font-size: 20px;
+                h1 {
+                    font-size: 30px;
+                }
+            }
+            span.bride {
+                h1 {
+                    font-size: 30px;
+                }
+                font-size: 20px;
+            }
+            span.and {
+                font-size: 40px;
+            }
+            span.heart {
+                font-size: 18px;
+                &:before {
+                    width: 60px;
+                }
+                &:after {
+                    width: 60px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .gallery {
+        .gallery__list {
+            .gallery__item {
+                .gallery__item__top {
+                    .gallery__layer {
+                        display: none;
+                    }
+                }
+                .gallery__item__bottom {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .testimonial {
+        .slides {
+            width: 100%;
+            .slide__content {
+                .slide__list {
+                    .slide__item {
+                        .slide__item__top {
+                            &:after {
+                                bottom: -5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        .banner__text {
+            width: 70%;
+            span.groom {
+                span {
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 1024px) and (min-width: 415px) {
+    .banner {
+        .banner__text {
+            width: 100%;
+        }
+    }
+}

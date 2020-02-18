@@ -1,0 +1,2498 @@
+/*********************Table Of Contents************************/
+/*********************1.General************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #424242;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  font-family: 'Poppins';
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.dFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p__absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h2,
+h6,
+h3,
+h4,
+h5,
+h2 span,
+h6 span,
+h3 span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Arima Madurai', cursive;
+}
+
+ul,
+p {
+  margin: 0;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes menu {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes upToDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upToDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes upToDown__small {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes upToDown__small {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes downToUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes downToUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0);
+            transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes blockUpDown1 {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blockUpDown1 {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blockUpDown2 {
+  0% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blockUpDown2 {
+  0% {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes gallery1 {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes gallery1 {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*********************2.Header************************/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.header .header__nav {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.header .header__nav ul {
+  width: 100%;
+  text-align: right;
+  background-color: rgba(34, 34, 34, 0.05);
+}
+
+.header .header__nav ul li {
+  float: none;
+  display: inline-block;
+  padding: 20px 26px 20px 20px;
+}
+
+.header .header__nav ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+.header .header__nav ul li.li-left {
+  float: left;
+}
+
+.header .header__nav ul li.li-right {
+  float: right;
+}
+
+.header .header__nav.fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  -webkit-animation: menu 0.5s;
+          animation: menu 0.5s;
+  width: 100%;
+  top: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+  margin-top: 0;
+}
+
+.header .header__nav.fixed .header__logo img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.header .header__nav .header__logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.header .header__nav .iconBar {
+  display: none;
+}
+
+/*********************3.Banner************************/
+.banner {
+  background-image: url("../image/home_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .banner__text {
+  width: 65%;
+  margin: 0 auto;
+  padding: 300px 0;
+  text-align: center;
+}
+
+.banner .banner__text span {
+  display: inline-block;
+  font-family: 'Arima Madurai', cursive;
+  color: white;
+}
+
+.banner .banner__text span.groom, .banner .banner__text span.bride {
+  font-size: 30px;
+}
+
+.banner .banner__text span.groom h1, .banner .banner__text span.bride h1 {
+  font-size: 85px;
+  color: white;
+  font-family: 'Pacifico', cursive;
+}
+
+.banner .banner__text span.and {
+  font-size: 85px;
+  color: #f02d72;
+  font-family: 'Pacifico', cursive;
+}
+
+.banner .banner__text span.heart {
+  margin: 0 auto;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+}
+
+.banner .banner__text span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 220px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.banner .banner__text span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 220px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.banner .banner__text h4 {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  margin-top: 30px;
+}
+
+/*********************3.Couple************************/
+.couple {
+  background-color: #eeeeee;
+  padding-top: 152px;
+  padding-bottom: 140px;
+}
+
+.couple h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+}
+
+.couple h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.couple h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.couple span.heart {
+  margin: 0 auto;
+}
+
+.couple span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.couple span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.couple span.heart i {
+  color: #f02d72;
+}
+
+.couple p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 0 auto;
+}
+
+.couple .couple__thumbnail {
+  margin-top: 190px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.couple .couple__thumbnail .couple__item {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  max-width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.couple .couple__thumbnail .couple__item img {
+  border: 8px solid white;
+  border-radius: 50%;
+  width: 241px;
+  height: 242px;
+  margin-top: -122px;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail {
+  padding: 40px 54px 60px;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail h6 {
+  color: #f02d72;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail h3 {
+  font-size: 28px;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail p {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+  margin-bottom: 35px;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail span.couple__icon i {
+  font-size: 20px;
+}
+
+.couple .couple__thumbnail .couple__item .couple__detail span.couple__icon i:hover {
+  color: #f02d72;
+  cursor: pointer;
+}
+
+.couple .couple__thumbnail .couple__item:hover img {
+  border-color: #f02d72;
+}
+
+.couple .couple__thumbnail .couple__heart__plus {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
+  height: 90px;
+  opacity: 0;
+}
+
+.couple .couple__thumbnail .couple__heart__plus.upDown {
+  -webkit-animation: upToDown 1s;
+          animation: upToDown 1s;
+  opacity: 1;
+}
+
+.couple .couple__thumbnail .couple__heart__plus i.fa.fa-heart {
+  font-size: 90px;
+  color: #f02d72;
+}
+
+.couple .couple__thumbnail .couple__heart__plus i.fa.fa-plus {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+}
+
+.couple a.button__wedding {
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 0px;
+  border-radius: 30px;
+  line-height: 1;
+  padding: 18px 33px;
+  font-weight: bold;
+  background-color: #222222;
+  color: white;
+  margin-top: 60px;
+  display: inline-block;
+  opacity: 0;
+}
+
+.couple a.button__wedding.upDown {
+  -webkit-animation: upToDown 1.3s;
+          animation: upToDown 1.3s;
+  opacity: 1;
+}
+
+.couple a.button__wedding:hover {
+  background-color: #f02d72;
+}
+
+/*********************4.Pink Overlay************************/
+.pink__overlay {
+  background-image: url("../image/big_day.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  position: relative;
+  padding: 100px 0;
+  z-index: -1;
+}
+
+.pink__overlay h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.pink__overlay h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.pink__overlay h2.couple__section__title .text__white {
+  color: white;
+}
+
+.pink__overlay span.heart {
+  margin: 0 auto;
+}
+
+.pink__overlay span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.pink__overlay span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.pink__overlay span.heart i {
+  color: white;
+}
+
+.pink__overlay p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 80px auto;
+  color: white;
+}
+
+.pink__overlay ul.countdown li {
+  opacity: 0;
+}
+
+.pink__overlay ul.countdown li.upDown {
+  -webkit-animation: downToUp 1s;
+          animation: downToUp 1s;
+  opacity: 1;
+}
+
+.pink__overlay ul.countdown li span {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 28px;
+}
+
+.pink__overlay ul.countdown li:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.pink__overlay ul.countdown li:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.pink__overlay ul.countdown li:nth-child(4) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.pink__overlay .bg__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(240, 45, 114, 0.6);
+  z-index: -1;
+}
+
+/*********************5.Love Story************************/
+.love__story {
+  padding: 140px 0;
+  background-color: #eeeeee;
+}
+
+.love__story h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.love__story h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.love__story h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.love__story h2.couple__section__title.upDown {
+  -webkit-animation: upToDown 1s;
+          animation: upToDown 1s;
+  opacity: 1;
+}
+
+.love__story span.heart {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.love__story span.heart.upDown {
+  -webkit-animation: downToUp 1.1s;
+          animation: downToUp 1.1s;
+  opacity: 1;
+}
+
+.love__story span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.love__story span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.love__story span.heart i {
+  color: #f02d72;
+}
+
+.love__story p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 80px auto;
+  color: #222;
+}
+
+.love__story .dFlex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.love__story .dFlex .love__story__item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+}
+
+.love__story .dFlex .love__story__item figure {
+  overflow: hidden;
+}
+
+.love__story .dFlex .love__story__item figure.blockUpDown1 {
+  -webkit-animation: blockUpDown1 0.8s;
+          animation: blockUpDown1 0.8s;
+  opacity: 1;
+}
+
+.love__story .dFlex .love__story__item figure.blockUpDown2 {
+  -webkit-animation: blockUpDown2 0.8s;
+          animation: blockUpDown2 0.8s;
+  opacity: 1;
+}
+
+.love__story .dFlex .love__story__item figure img {
+  width: 100%;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line {
+  background-color: #f02d72;
+  padding: 15px 0 11px 0;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line h3 {
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+  font-size: 22px;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line.left {
+  position: relative;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line.left:after {
+  content: '';
+  position: absolute;
+  border-left: 16px solid #f02d72;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  width: 0;
+  height: 0;
+  right: -15px;
+  top: 20%;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line.right {
+  position: relative;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__line.right:after {
+  content: '';
+  position: absolute;
+  border-right: 16px solid #f02d72;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20%;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__overview {
+  background-color: white;
+  padding: 20px 25px 35px 28px;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__overview p.love__story__date {
+  color: #f02d72;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.love__story .dFlex .love__story__item figure .love__story__overview p.love__story__des {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+  text-align: left;
+}
+
+.love__story .dFlex .love__story__divider {
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
+  max-width: 17%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.love__story .dFlex .love__story__divider div {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+}
+
+.love__story .dFlex .love__story__divider div img {
+  max-width: 100%;
+}
+
+/*********************6.Love Story************************/
+.testimonial {
+  background-image: url("../image/testimonial_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.testimonial .slides {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial .slides .slide__content {
+  overflow: hidden;
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
+  max-width: 95%;
+}
+
+.testimonial .slides .slide__content .slide__list {
+  height: 100%;
+  white-space: nowrap;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__top {
+  position: relative;
+  background-color: white;
+  border-top-left-radius: 110px;
+  border-bottom-right-radius: 110px;
+  padding: 70px;
+  white-space: initial;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__top p i {
+  font-size: 36px;
+  color: #f02d72;
+  margin-right: 15px;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__top:after {
+  content: '';
+  position: absolute;
+  border-top: 28px solid white;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  left: 15%;
+  bottom: -11%;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__bottom {
+  width: 33%;
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__bottom div h4 {
+  color: #f02d72;
+}
+
+.testimonial .slides .slide__content .slide__list .slide__item .slide__item__bottom div p {
+  color: white;
+  font-size: 14px;
+}
+
+.testimonial .slides ul.slide__button {
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  max-width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial .slides ul.slide__button li.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.testimonial .slides ul.slide__button li.dot.active {
+  background-color: #f02d72;
+}
+
+/*********************7.Wedding Event************************/
+.wedding__event {
+  padding: 140px 0;
+}
+
+.wedding__event h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.wedding__event h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.wedding__event h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.wedding__event span.heart {
+  margin: 0 auto;
+}
+
+.wedding__event span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.wedding__event span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.wedding__event span.heart i {
+  color: #f02d72;
+}
+
+.wedding__event p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 80px auto;
+  color: #222;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right {
+  padding-left: 30px;
+  padding-right: 15px;
+  text-align: left;
+  margin: 0 15px 0 30px;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li h3:hover {
+  color: #f02d72;
+  cursor: pointer;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info li {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info li i {
+  color: #f02d72;
+  margin-right: 10px;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li p {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+  margin-bottom: 40px;
+}
+
+.wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li img {
+  margin-bottom: 50px;
+}
+
+/*********************7.RSVP************************/
+.psvp__overlay {
+  background-image: url("../image/rsvp_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  position: relative;
+  padding: 100px 0;
+  z-index: -1;
+}
+
+.psvp__overlay h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.psvp__overlay h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.psvp__overlay h2.couple__section__title .text__white {
+  color: white;
+}
+
+.psvp__overlay span.heart {
+  margin: 0 auto;
+}
+
+.psvp__overlay span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.psvp__overlay span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: white;
+}
+
+.psvp__overlay span.heart i {
+  color: white;
+}
+
+.psvp__overlay p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 80px auto;
+  color: white;
+}
+
+.psvp__overlay ul.countdown li span {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  margin-top: 28px;
+}
+
+.psvp__overlay .bg__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(240, 45, 114, 0.6);
+  z-index: -1;
+}
+
+.psvp__overlay a.button__wedding {
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 0px;
+  border-radius: 30px;
+  line-height: 1;
+  padding: 18px 33px;
+  font-weight: bold;
+  background-color: white;
+  color: #f02d72;
+  display: inline-block;
+}
+
+.psvp__overlay a.button__wedding:hover {
+  background-color: #333;
+  color: white;
+}
+
+/*********************8.Wedding people************************/
+.wedding__people {
+  padding: 100px 0;
+}
+
+.wedding__people h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.wedding__people h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.wedding__people h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.wedding__people span.heart {
+  margin: 0 auto;
+}
+
+.wedding__people span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.wedding__people span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.wedding__people span.heart i {
+  color: #f02d72;
+}
+
+.wedding__people p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 0px auto;
+  color: #222;
+}
+
+.wedding__people .wedding__people__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  max-width: 23%;
+  margin-top: 90px;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item a {
+  margin-bottom: 30px;
+  display: inline-block;
+  background-color: #fff;
+  border: 5px solid #ddd;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item a img {
+  width: 100%;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item a:hover {
+  border: 10px solid #f02d72;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item figcaption h3 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item figcaption h3:hover {
+  color: #f02d72;
+  cursor: pointer;
+}
+
+.wedding__people .wedding__people__list .wedding__people__item figcaption p {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+  text-transform: capitalize;
+}
+
+/*********************9.Wedding contact************************/
+.contact {
+  padding: 100px 0;
+  background-image: url("../image/rsvp_form_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.contact h2.couple__section__title .text__white {
+  color: white;
+}
+
+.contact h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.contact span.heart {
+  margin: 0 auto;
+}
+
+.contact span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.contact span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.contact span.heart i {
+  color: #f02d72;
+}
+
+.contact p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 70px auto;
+  color: white;
+}
+
+.contact .wedding__contact {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact .wedding__contact form .form-group .inputIcon {
+  position: relative;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  max-width: 48%;
+}
+
+.contact .wedding__contact form .form-group .inputIcon input,
+.contact .wedding__contact form .form-group .inputIcon select,
+.contact .wedding__contact form .form-group .inputIcon textarea {
+  padding-left: 50px;
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact .wedding__contact form .form-group .inputIcon i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.contact .wedding__contact form .form-group .textareaIcon {
+  position: relative;
+}
+
+.contact .wedding__contact form .form-group .textareaIcon textarea {
+  padding-left: 50px;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  padding-top: 15px;
+}
+
+.contact .wedding__contact form .form-group .textareaIcon i {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 14px;
+}
+
+.contact a.button__wedding {
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 0px;
+  border-radius: 30px;
+  line-height: 1;
+  padding: 18px 33px;
+  font-weight: bold;
+  background-color: #f02d72;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.contact a.button__wedding:hover {
+  color: #222;
+  background-color: white;
+}
+
+/*********************10.Photo gallery************************/
+.gallery {
+  padding: 100px 0;
+}
+
+.gallery h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.gallery h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.gallery h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.gallery span.heart {
+  margin: 0 auto;
+}
+
+.gallery span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.gallery span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.gallery span.heart i {
+  color: #f02d72;
+}
+
+.gallery p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 70px auto;
+  color: #222;
+}
+
+.gallery .gallery__list .gallery__item {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  max-width: 32%;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top {
+  position: relative;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top.gallery1 {
+  -webkit-animation: gallery1 0.7s;
+          animation: gallery1 0.7s;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top img {
+  width: 100%;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 45, 114, 0.9);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__icon i {
+  margin-right: 8px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__icon i,
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__icon span {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  white-space: nowrap;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap p {
+  font-size: 14px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap h4,
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap p {
+  color: white;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap h4 i,
+.gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer .gallery__figcap p i {
+  color: white;
+  margin-right: 8px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__top:hover .gallery__layer {
+  opacity: 1;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom {
+  margin-top: 15px;
+  position: relative;
+  position: relative;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom.gallery1 {
+  -webkit-animation: gallery1 1s;
+          animation: gallery1 1s;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom img {
+  width: 100%;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(240, 45, 114, 0.9);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__icon i {
+  margin-right: 8px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__icon i,
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__icon span {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  white-space: nowrap;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap p {
+  font-size: 14px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap h4,
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap p {
+  color: white;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap h4 i,
+.gallery .gallery__list .gallery__item .gallery__item__bottom .gallery__layer .gallery__figcap p i {
+  color: white;
+  margin-right: 8px;
+}
+
+.gallery .gallery__list .gallery__item .gallery__item__bottom:hover .gallery__layer {
+  opacity: 1;
+}
+
+/*********************11.Blog************************/
+.blog {
+  padding: 100px 0;
+  background-color: #eeeeee;
+}
+
+.blog h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+  z-index: 9;
+}
+
+.blog h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.blog h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.blog span.heart {
+  margin: 0 auto;
+}
+
+.blog span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.blog span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.blog span.heart i {
+  color: #f02d72;
+}
+
+.blog p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 70px auto;
+  color: #222;
+}
+
+.blog .blog__list .blog__item {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  max-width: 32%;
+}
+
+.blog .blog__list .blog__item.gallery1 {
+  -webkit-animation: gallery1 1s;
+          animation: gallery1 1s;
+}
+
+.blog .blog__list .blog__item .blog__img {
+  position: relative;
+}
+
+.blog .blog__list .blog__item .blog__img img {
+  width: 100%;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f02d72), color-stop(65%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, #f02d72 0%, rgba(255, 255, 255, 0) 65%);
+  width: 100%;
+  height: 100%;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer h5 {
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  width: 80%;
+  bottom: 5%;
+  left: 10%;
+  opacity: 0;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul li {
+  color: white;
+  font-size: 14px;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul li i {
+  color: white;
+  margin-right: 8px;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul li:nth-child(1) {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  max-width: 35%;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul li:nth-child(2) {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  max-width: 40%;
+}
+
+.blog .blog__list .blog__item .blog__img .blog__img__layer ul li:nth-child(3) {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  max-width: 20%;
+}
+
+.blog .blog__list .blog__item .blog__text {
+  background-color: white;
+  padding: 38px 25px;
+}
+
+.blog .blog__list .blog__item .blog__text p {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+  margin-bottom: 35px;
+}
+
+.blog .blog__list .blog__item .blog__text h4 {
+  color: #222;
+}
+
+.blog .blog__list .blog__item .blog__text h4:hover {
+  color: #f02d72;
+  cursor: pointer;
+}
+
+.blog .blog__list .blog__item:hover .blog__img .blog__img__layer ul {
+  opacity: 1;
+  bottom: 10%;
+}
+
+.blog .blog__list .blog__item:hover .blog__img .blog__img__layer h5 {
+  bottom: 15%;
+}
+
+/*********************12.Location************************/
+.location {
+  padding: 100px 0;
+}
+
+.location h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+}
+
+.location h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.location h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.location span.heart {
+  margin: 0 auto;
+}
+
+.location span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.location span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.location span.heart i {
+  color: #f02d72;
+}
+
+.location p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 80px auto;
+}
+
+.location .contact__info .contact__info__detail {
+  padding: 20px 0;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  -ms-flex-preferred-size: 31.5%;
+      flex-basis: 31.5%;
+  max-width: 31.5%;
+}
+
+.location .contact__info .contact__info__detail.upDown__small {
+  -webkit-animation: upToDown__small 2s;
+          animation: upToDown__small 2s;
+  opacity: 1;
+}
+
+.location .contact__info .contact__info__detail p:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location .contact__info .contact__info__detail p:nth-child(2) {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  color: #424242;
+}
+
+.location .contact__info .contact__info__detail:hover {
+  cursor: pointer;
+  border-color: #f02d72;
+}
+
+.location .contact__info .contact__info__detail:hover p i {
+  color: #f02d72;
+}
+
+/*********************************Auto slide*******************************/
+.auto__slide {
+  padding: 100px 0;
+}
+
+.auto__slide h2.couple__section__title {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 0;
+  text-align: center;
+}
+
+.auto__slide h2.couple__section__title .text__dark {
+  color: #222;
+}
+
+.auto__slide h2.couple__section__title .text__pink {
+  color: #f02d72;
+}
+
+.auto__slide span.heart {
+  margin: 0 auto;
+}
+
+.auto__slide span.heart:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.auto__slide span.heart:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 94px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #f02d72;
+}
+
+.auto__slide span.heart i {
+  color: #f02d72;
+}
+
+.auto__slide p.couple__section__tagline {
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  max-width: 716px;
+  margin: 25px auto 0 auto;
+}
+
+.auto__slide .slides__auto {
+  margin-top: 100px;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.auto__slide .slides__auto .slide__auto__item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  max-width: 25%;
+  padding: 0 50px;
+}
+
+.auto__slide .slides__auto .slide__auto__item img {
+  margin: 0 auto;
+  display: block;
+}
+
+/*********************************footer*******************************/
+footer .footer__logo {
+  background-color: #eeeeee;
+  padding: 90px 0;
+}
+
+footer .footer__logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer .footer__copyright {
+  background-color: #333;
+  text-align: center;
+  font-size: 14px;
+  padding: 32px 0;
+}
+
+footer .footer__copyright span.text__white {
+  color: white;
+}
+
+footer .footer__copyright span.text__pink {
+  color: #f02d72;
+}
+
+/*********************************loading*******************************/
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.load:before {
+  width: 50%;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: '';
+  -webkit-transition: .4s ease-out;
+  transition: .4s ease-out;
+  left: 0;
+}
+
+.load:after {
+  width: 50%;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  content: '';
+  -webkit-transition: .4s ease-out;
+  transition: .4s ease-out;
+  right: 0;
+}
+
+.load .load__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.load .load__content .load__circle__lv1 {
+  position: absolute;
+  /* -webkit-transform: translate(-50%, -50%); */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-top: 3px solid orange !important;
+  padding: 10px;
+  -webkit-animation: rotate 1.5s infinite;
+  animation: rotate 1.5s infinite;
+  border: 3px solid transparent;
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+}
+
+.load .load__content .load__circle__lv2 {
+  position: absolute;
+  /* -webkit-transform: translate(-50%, -50%); */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-left: 3px solid red !important;
+  padding: 10px;
+  -webkit-animation: rotate 1.5s infinite;
+  animation: rotate 1.5s infinite;
+  border: 3px solid transparent;
+  width: 160px;
+  height: 160px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.load .load__content .load__circle__lv3 {
+  position: absolute;
+  /* -webkit-transform: translate(-50%, -50%); */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border-bottom: 3px solid blue !important;
+  padding: 10px;
+  -webkit-animation: rotate 1.5s infinite;
+  animation: rotate 1.5s infinite;
+  border: 3px solid transparent;
+  width: 140px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.load.loading {
+  pointer-events: none;
+}
+
+.load.loading .load__content {
+  -webkit-transform: translateY(-700%);
+          transform: translateY(-700%);
+}
+
+.load.loading:before {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.load.loading:after {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+@media screen and (max-width: 768px) and (min-width: 415px) {
+  .love__story .dFlex .love__story__item {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    max-width: 35%;
+  }
+  .testimonial .slides {
+    width: 100%;
+  }
+  .testimonial .slides .slide__content .slide__list .slide__item .slide__item__top:after {
+    bottom: -10%;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .header .header__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wedding__event .wedding__event__content .wedding__event__right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+    margin: 0;
+  }
+  .wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info li {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    max-width: 80%;
+  }
+  .wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info li:nth-child(3) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .wedding__event .wedding__event__content .wedding__event__left img {
+    width: 100%;
+  }
+  .love__story .dFlex .love__story__item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    max-width: 30%;
+  }
+  .love__story .dFlex .love__story__divider {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    max-width: 20%;
+  }
+  .header .header__nav ul li {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .header__nav {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header__nav ul {
+    position: absolute;
+    top: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    left: 0;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding-left: 50px;
+    height: 0;
+  }
+  .header .header__nav ul li {
+    text-align: left;
+    display: unset;
+  }
+  .header .header__nav ul li.li-left, .header .header__nav ul li.li-right {
+    float: none;
+  }
+  .header .header__nav ul.hien {
+    height: 50vh;
+  }
+  .header .header__nav .header__logo {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header__nav .header__logo.hien {
+    height: 50vh;
+  }
+  .header .header__nav .iconBar {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-color: rgba(34, 34, 34, 0.6);
+    padding: 15px;
+  }
+  .header .header__nav .iconBar i {
+    color: white;
+    font-size: 50px;
+  }
+  .header .header__text {
+    width: 90%;
+  }
+  .header .header__text span.groom h1 {
+    font-size: 70px;
+  }
+  .header .header__text span.heart:before {
+    width: 200px;
+  }
+  .header .header__text span.heart:after {
+    width: 200px;
+  }
+  .wedding__event .wedding__event__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wedding__event .wedding__event__content .wedding__event__right {
+    margin: 50px 0px 0 0px !important;
+    padding: 0;
+  }
+  .wedding__event .wedding__event__content .wedding__event__left,
+  .wedding__event .wedding__event__content .wedding__event__right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .wedding__event .wedding__event__content .wedding__event__left img,
+  .wedding__event .wedding__event__content .wedding__event__right img {
+    width: 100%;
+  }
+  .wedding__event .wedding__event__content .wedding__event__left ul.wedding__event__list li ul.wedding__event__info,
+  .wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wedding__event .wedding__event__content .wedding__event__left ul.wedding__event__list li ul.wedding__event__info li,
+  .wedding__event .wedding__event__content .wedding__event__right ul.wedding__event__list li ul.wedding__event__info li {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header {
+    width: 360px;
+    position: fixed;
+  }
+  .couple .couple__thumbnail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 90px;
+  }
+  .couple .couple__thumbnail .couple__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 200px;
+  }
+  .couple .couple__thumbnail .couple__heart__plus {
+    margin: 50px auto 0 auto;
+  }
+  .pink__overlay h2.couple__section__title {
+    font-size: 43px;
+  }
+  .pink__overlay ul.countdown {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pink__overlay ul.countdown li.upDown {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    max-width: 20%;
+    white-space: nowrap;
+  }
+  .pink__overlay ul.countdown li.upDown img {
+    width: 100%;
+  }
+  .pink__overlay ul.countdown li.upDown span {
+    font-size: 15px;
+  }
+  .love__story .dFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .love__story .dFlex .love__story__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .love__story .dFlex .love__story__divider {
+    display: none;
+  }
+  .wedding__people .wedding__people__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wedding__people .wedding__people__list .wedding__people__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .contact .wedding__contact {
+    width: 100%;
+  }
+  .contact .wedding__contact form .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .contact .wedding__contact form .form-group .inputIcon {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .blog .blog__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog .blog__list .blog__item.gallery1 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .location .contact__info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .location .contact__info .contact__info__detail.upDown__small {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  .auto__slide .slides__auto {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  .auto__slide .slides__auto .slide__auto__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+  .header__text {
+    width: 100%;
+  }
+  .header__text span.groom h1 {
+    font-size: 70px;
+  }
+  .header__text span.heart:before {
+    width: 200px;
+  }
+  .header__text span.heart:after {
+    width: 200px;
+  }
+  .header .header__text span.groom {
+    font-size: 20px;
+  }
+  .header .header__text span.groom h1 {
+    font-size: 30px;
+  }
+  .header .header__text span.bride {
+    font-size: 20px;
+  }
+  .header .header__text span.bride h1 {
+    font-size: 30px;
+  }
+  .header .header__text span.and {
+    font-size: 40px;
+  }
+  .header .header__text span.heart {
+    font-size: 18px;
+  }
+  .header .header__text span.heart:before {
+    width: 60px;
+  }
+  .header .header__text span.heart:after {
+    width: 60px;
+  }
+  .header .header__text h4 {
+    font-size: 18px;
+  }
+  .gallery .gallery__list .gallery__item .gallery__item__top .gallery__layer {
+    display: none;
+  }
+  .gallery .gallery__list .gallery__item .gallery__item__bottom {
+    margin-top: 5px;
+  }
+  .testimonial .slides {
+    width: 100%;
+  }
+  .testimonial .slides .slide__content .slide__list .slide__item .slide__item__top:after {
+    bottom: -5%;
+  }
+  .banner .banner__text {
+    width: 70%;
+  }
+  .banner .banner__text span.groom span {
+    font-size: 20px;
+  }
+  .banner .banner__text span.groom h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 415px) {
+  .banner .banner__text {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
