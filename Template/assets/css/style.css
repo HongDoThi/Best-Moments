@@ -1008,10 +1008,6 @@ p {
   border: 1px solid white;
 }
 
-.testimonial .slides ul.slide__button li.dot.active {
-  background-color: #f02d72;
-}
-
 /*********************7.Wedding Event************************/
 .wedding__event {
   padding: 140px 0;
